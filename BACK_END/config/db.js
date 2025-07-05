@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const connectDB=async()=>{
     try
     {
-        const conn=await mongoose.connect(process.env.MONGO_URI);
+        const conn = await mongoose.connect("mongodb+srv://rudraksh1510:ULV51GZdgVTZIEtT@cluster0.7nisanb.mongodb.net/Products?retryWrites=true&w=majority&appName=Cluster0");
+
         console.log(`MongoDB Connected : ${conn.connection.host}`);
     }
     catch(error)
